@@ -1,0 +1,202 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Establece la fuente general */
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el padding predeterminado */
+  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del elemento */
+}
+
+/* Estilo para una sección azul lateral */
+.blue-side {
+  background-color: #007bff; /* Establece un fondo azul */
+  width: 20%; /* Ancho de 20% */
+  height: 118%; /* Altura extendida al 118% */
+}
+
+/* Contenedor de contenido principal */
+.content {
+  width: 75%; /* Ancho del 75% */
+  padding: 20px; /* Espaciado interno de 20px */
+  margin-left: auto;
+  margin-right: auto; /* Centra el contenido horizontalmente */
+  background-color: #f9f9f9; /* Fondo gris claro */
+}
+
+/* Imagen centrada */
+.titulo-imagen {
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 100%; /* La imagen se ajusta al tamaño del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    width: 250px; /* Tamaño personalizado de 250px de ancho */
+}
+
+/* Contenedor para columnas, utilizando flexbox */
+.columns-container {
+    display: flex; /* Flexbox para crear columnas */
+    justify-content: space-between; /* Distribuye las columnas equitativamente */
+    gap: 30px; /* Espaciado de 30px entre las columnas */
+}
+
+/* Contenedor principal para organizar el layout */
+.layout-container {
+    display: flex; /* Flexbox para estructura de layout */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* Estilos comunes para la sección del formulario y la lista */
+.form-section, .list-section {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno de 20px */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
+    width: 49%; /* Cada sección ocupa el 49% del ancho del contenedor */
+}
+
+/* Títulos en el formulario y la lista */
+.form-section h2, .list-section h2 {
+  color: #c6ff00; /* Color verde neón */
+  text-shadow: -2px -2px 0 #000, /* Sombra de texto en varias direcciones */
+                2px -2px 0 #000,
+               -2px  2px 0 #000,
+                2px  2px 0 #000;
+  margin-bottom: 20px; /* Espacio inferior de 20px */
+  text-align: center; /* Centra el texto */
+  font-family: 'Franklin Gothic Medium'; /* Fuente personalizada */
+  font-size: 300%; /* Tamaño de texto muy grande */
+}
+
+/* Estilo para los grupos de formulario */
+.form-group {
+  margin-bottom: 15px; /* Margen inferior para espaciar los campos */
+}
+
+/* Estilo para las etiquetas de los campos */
+.form-group label {
+  display: block; /* Hace que las etiquetas se comporten como bloques */
+  font-weight: bold; /* Texto en negrita */
+  margin-bottom: 5px; /* Margen inferior de 5px */
+  color: #000000; /* Color de texto negro */
+  font-size: 20px; /* Tamaño de fuente grande */
+}
+
+/* Estilo para los inputs y selects del formulario */
+.form-group input, .form-group select {
+  width: 100%; /* Ocupan el 100% del contenedor */
+  padding: 10px; /* Padding interno de 10px */
+  border-radius: 5px; /* Bordes redondeados */
+  border: 1px solid #cccccc; /* Borde gris claro */
+  color: rgb(151, 0, 40); /* Texto color vino */
+  font-size: 15px; /* Tamaño de fuente mediano */
+}
+
+/* Estilos para los botones generales */
+.btn {
+  background-color: teal; /* Color de fondo teal */
+  color: #fff; /* Texto blanco */
+  padding: 10px 15px; /* Padding de 10px vertical, 15px horizontal */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a pointer al pasar sobre el botón */
+  width: 100%; /* Botón ocupa el 100% del contenedor */
+  font-family: 'Franklin Gothic Medium'; /* Fuente personalizada */
+  font-size: 20px; /* Tamaño de fuente grande */
+}
+
+/* Botón principal con espaciado adicional */
+.btn-primary {
+  margin-top: 10px; /* Margen superior de 10px */
+}
+
+/* Efecto hover para el botón principal */
+.btn-primary:hover {
+  background-color: coral; /* Cambia el color de fondo a coral */
+}
+
+/* Efecto hover para el botón secundario */
+.btn-secondary:hover {
+  background-color: coral; /* Cambia el color de fondo a coral */
+}
+
+/* Estilo para el contenedor de la tabla */
+.table-container {
+  width: 100%; /* Ancho completo */
+  overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
+}
+
+/* Sección de la lista con desplazamiento vertical */
+.list-section {
+  max-height: 800px; /* Limita la altura máxima */
+  overflow-y: auto; /* Activa el desplazamiento vertical */
+}
+
+/* Estilo para la tabla de clientes */
+.table-clientes {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  border-collapse: collapse; /* Colapsa los bordes para un diseño más limpio */
+}
+
+/* Estilo para las celdas de la tabla */
+.table-clientes th, .table-clientes td {
+  padding: 10px; /* Padding interno de las celdas */
+  text-align: left; /* Texto alineado a la izquierda */
+  border: 1px solid #ddd; /* Borde gris claro */
+}
+
+/* Estilo para los encabezados de la tabla */
+.table-clientes th {
+  background-color: #f4f4f4; /* Fondo gris claro */
+  color: #333; /* Texto gris oscuro */
+}
+
+/* Fila con fondo alternado */
+.table-clientes tr:nth-child(even) {
+  background-color: #f9f9f9; /* Fondo gris claro para filas pares */
+}
+
+/* Efecto hover para las filas de la tabla */
+.table-clientes tr:hover {
+  background-color: #f1f1f1; /* Cambia el color de fondo al pasar sobre la fila */
+}
+
+/* Estilo para el botón Editar */
+.btn-edit {
+  background-color: #28a745; /* Color verde para el botón de editar */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Padding más grande */
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a pointer */
+  font-size: 16px; /* Tamaño de fuente mediano */
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Efecto hover para el botón Editar */
+.btn-edit:hover {
+  background-color: #218838; /* Cambia a un verde más oscuro al pasar el mouse */
+}
+
+/* Estilo para el botón Eliminar */
+.btn-delete {
+  background-color: #dc3545; /* Color rojo para eliminar */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Padding más grande */
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a pointer */
+  font-size: 16px; /* Tamaño de fuente mediano */
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Efecto hover para el botón Eliminar */
+.btn-delete:hover {
+  background-color: #c82333; /* Rojo más oscuro al pasar el mouse */
+}
+
+/* Estilo general para todos los botones */
+button {
+  display: inline-block; /* Hace que los botones se alineen en línea */
+  text-align: center; /* Centra el texto dentro del botón */
+  margin: 5px; /* Margen alrededor del botón */
+  font-weight: bold; /* Texto en negrita */
+}
